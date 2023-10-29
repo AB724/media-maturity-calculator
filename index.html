@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Media Maturity Scale Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Visual Media Maturity Scale Calculator</h1>
+
+    <form id="evaluationForm">
+        <div class="question">
+            <label for="q1">Question 1: [Your Question Here]</label>
+            <input type="range" id="q1" min="1" max="5" step="1">
+        </div>
+        <!-- Repeat for all questions... -->
+        <!-- You can customize the type of input based on the question (e.g., radio buttons, dropdowns, etc.) -->
+
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div id="results">
+        <h2>Your Score: <span id="score"></span></h2>
+        <p id="recommendation"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
